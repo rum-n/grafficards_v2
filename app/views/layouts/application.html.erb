@@ -2,13 +2,70 @@
 <html>
 <head>
   <title>Grafficards</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag  'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag	 'application', "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css" %>
+  <%= stylesheet_link_tag	 'application', "https://fonts.googleapis.com/icon?family=Material+Icons" %>
+  <%= stylesheet_link_tag	 'application', "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" %>
+  <%= stylesheet_link_tag	 'application', "https://fonts.googleapis.com/css?family=Dancing+Script:700" %>
+
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js" %>
   <%= csrf_meta_tags %>
+
 </head>
 <body>
 
+<!-- ========================== NAVBAR STARTS HERE============================== -->
+
+<div class="navbar-fixed">
+  <nav class="light-blue lighten-1 z-depth-0" role="navigation">
+    <div class="nav-wrapper container">
+    <%= link_to 'Grafficards', root_path, class: 'brand-logo' %>
+      <ul class="right hide-on-med-and-down">
+        <li><a><%= link_to 'About', about_path %></a></li>
+        <li><a><%= link_to 'Contact', contact_path %></a></li>
+        <li><a><%= link_to 'Blog', blog_path %></a></li>
+      <ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a><%= link_to 'About', about_path %></a></li>
+        <li><a><%= link_to 'Contact', contact_path %></a></li>
+        <li><a><%= link_to 'Blog', blog_path %></a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+</div>
+
+<!-- ========================== NAVBAR ENDS HERE============================== -->
+
 <%= yield %>
+
+<!-- ========================== FOOTER STARTS HERE============================== -->
+
+<footer class="page-footer orange">
+    <div class="container">
+          <ul class="contact-info container center">
+            <li class="twitter"><a href="https://twitter.com/Grafficards"><i class="fa fa-twitter fa-2x menu-brown-text"></i></a></li>
+            <li class="instagram"><a href="https://www.instagram.com/grafficards/"><i class="fa fa-instagram fa-2x menu-brown-text"></i></a></li>
+            <li class="linkedin"><a href="https://www.linkedin.com/company/10373989?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A10373989%2Cidx%3A1-1-1%2CtarId%3A1473615626202%2Ctas%3Agrafficards"><i class="fa fa-linkedin-square fa-2x menu-brown-text"></i></a></li>
+            <li class="angellist"><a href="https://angel.co/grafficards"><i class="fa fa-angellist fa-2x menu-brown-text"></i></a></li>
+          </ul>
+          <br>
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      <div class="left" id="copyright">
+         &#169; 2015 Grafficards
+      </div>
+      <div class="container center">
+      Made with <i class="fa fa-heart-o"></i> in Sofia
+      </div>
+    </div>
+</footer>
+
+<!-- ========================== FOOTER ENDS HERE============================== -->
 
 </body>
 </html>
