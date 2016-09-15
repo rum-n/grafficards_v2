@@ -61,6 +61,22 @@ section {
   padding-bottom: 4em;
 }
 
+/*CONTACT FORM*/
+
+.hidden {
+  display: none;
+}
+
+.contact_message_sent {
+  padding-top: 15em;
+  padding-bottom: 20em;
+}
+
+.contact_container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 50%; }
+}
 
 /*================END ADDED BY ME================*/
 

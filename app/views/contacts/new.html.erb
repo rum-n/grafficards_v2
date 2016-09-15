@@ -1,0 +1,30 @@
+<br><br>
+<div class="row center">
+	<h4 class="header col s12 light">Contact us</h4>
+</div>
+
+
+	<%= form_for @contact do |f| %>
+	<div class='contact_container input-field'>
+		<%= f.label :name %> <br>
+		<%= f.text_field :name, required: true %><br><br>
+	</div>
+	<div class='contact_container input-field validate'>
+		<%= f.label :email %> <br>
+		<%= f.email_field :email, required: true %><br><br>
+		</div>
+		<div class='contact_container input-field'>
+		<%= f.label :message %> <br>
+		<%= f.text_area :message, as: :text %>
+	</div>
+	<div class="hidden">
+		<%= f.label :nickname %> <br>
+		<%= f.text_field :nickname, hint: 'leave this field blank' %>
+	</div>
+	<br><br>
+
+	<div class="row center next_button">
+	<%= f.submit 'Send message', :id => "download-button", :class => "btn-large waves-effect waves-light orange" %>
+	</div>
+</div>
+<% end %>
