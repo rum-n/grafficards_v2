@@ -3,9 +3,15 @@
       <div class="container">
         <br><br>
         <h1 class="header center orange-text">Let them know you care!</h1>
+        
         <div class="row center">
           <h5 class="header col s12 light">A handcrafted beautiful postcard with your message inside</h5>
         </div>
+
+        <div class="homepage_img center">
+        <%= image_tag ("/assets/12.tif"), :width =>"400" %>
+        </div>
+
         <div class="row center">
           <%= link_to "Try it out".html_safe, gallery_path, :id => "download-button", :class => "btn-large waves-effect waves-light orange" %>
         </div>
@@ -18,40 +24,27 @@
   <div class="row center">
       <h4 class="header col s12 light">Why send a Grafficard?</h4>
       <br><br><br><br>
-    <div class="col s12 m6 l3">
-      <h5 class="header light"></h5>
-    </div>
+    <ul class="container center" id="double">
+      <li class="col s12 m6 l3 homepage_reasons"><%= image_tag ("/assets/14.tif"), :width =>"270" %></li>
 
-    <div class="col s12 m6 l3">
-      <h5 class="header light left-align"><i class="fa fa-hashtag orange-text"></i> Super easy</h5>
-    </div>
+      <li class="col s12 m6 l3 homepage_reasons">
+        <h5 class="header light left-align"><i class="fa fa-hashtag orange-text"></i> Super easy</h5>
+      </li>
 
-    <div class="col s12 m6 l3">
-      <h5 class="header light left-align"><i class="fa fa-hashtag orange-text"></i> Hand-written message</h5>
-    </div>
+      <li class="col s12 m6 l3 homepage_reasons">
+        <h5 class="header light left-align"><i class="fa fa-hashtag orange-text"></i> Hand-written message</h5>
+      </li>
 
-    <div class="col s12 m6 l3">
-      <h5 class="header light"></h5>
-    </div>
+      <li class="col s12 m6 l3 homepage_reasons">
+        <h5 class="header light left-align"><i class="fa fa-hashtag orange-text"></i> Beautiful design</h5>
+      </li>
+
+      <li class="col s12 m6 l3 homepage_reasons">
+        <h5 class="header light left-align"><i class="fa fa-hashtag orange-text"></i> Sent from your name</h5>
+      </li>
+    </ul>
   </div>
 
-    <div class="row center">
-    <div class="col s12 m6 l3">
-      <h5 class="header light"></h5>
-    </div>
-
-    <div class="col s12 m6 l3">
-      <h5 class="header light left-align"><i class="fa fa-hashtag orange-text"></i> Beautiful design</h5>
-    </div>
-
-    <div class="col s12 m6 l3">
-      <h5 class="header light left-align"><i class="fa fa-hashtag orange-text"></i> Sent from your name</h5>
-    </div>
-
-    <div class="col s12 m6 l3">
-      <h5 class="header light"></h5>
-    </div>
-  </div>
 <br><br><br>
 
   <div class="page-footer yellow lighten-5">

@@ -3,7 +3,6 @@
 	<h4 class="header col s12 light">Contact us</h4>
 </div>
 
-
 	<%= form_for @contact do |f| %>
 	<div class='contact_container input-field'>
 		<%= f.label :name %> <br>
@@ -26,5 +25,6 @@
 	<div class="row center next_button">
 	<%= f.submit 'Send message', :id => "download-button", :class => "btn-large waves-effect waves-light orange" %>
 	</div>
+	
 </div>
 <% end %>

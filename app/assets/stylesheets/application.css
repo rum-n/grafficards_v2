@@ -68,14 +68,25 @@ section {
 }
 
 .contact_message_sent {
-  padding-top: 15em;
-  padding-bottom: 20em;
+  padding-top: 10em;
+  padding-bottom: 10em;
 }
 
 .contact_container {
   margin: 0 auto;
   max-width: 1280px;
   width: 50%; }
+}
+
+/*HOMEPAGE*/
+
+.homepage_reasons {
+  display: inline;
+  float: left;
+}
+
+#double li {
+  width: 50%;
 }
 
 /*================END ADDED BY ME================*/
@@ -5621,7 +5632,8 @@ nav {
   height: 56px;
   z-index: 998; }
   .navbar-fixed nav {
-    position: fixed; }
+    position: fixed;
+    opacity: 0.9; }
 
 @media only screen and (min-width : 601px) {
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
